@@ -23,7 +23,7 @@ Esta é a **primeira demonstração jogável**. É uma área pequena para testar
 ## Como abrir no Roblox Studio (no PC)
 
 ### Jeito simples (sem instalar nada)
-1. Baixe o arquivo **`ProjectAwakening.rbxl`**. Para gerá-lo, veja "Gerar o arquivo do jogo" abaixo.
+1. Baixe o arquivo **`ProjectAwakening.rbxl`**, que está na raiz deste repositório (no GitHub: clique no arquivo e depois em **Download raw file**). Se preferir gerar de novo, veja "Gerar o arquivo do jogo" abaixo.
 2. Dê dois cliques nele. O Roblox Studio abre o jogo.
 3. Aperte **Play** (F5).
 
@@ -47,7 +47,8 @@ A partir daí, todo script editado em `src/` aparece no Studio automaticamente.
 
 ```bash
 python3 tools/gerar_templo.py                                 # cria world/Temple.model.json (o cenário)
-rojo build build.project.json -o build/ProjectAwakening.rbxl  # monta o jogo completo
+rojo build build.project.json -o ProjectAwakening.rbxl        # monta o jogo completo
+cp ProjectAwakening.rbxl build/                               # cópia usada pelo teste
 lune run tests/verificar.luau                                 # confere se está tudo certo
 ```
 
