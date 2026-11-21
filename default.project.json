@@ -1,0 +1,71 @@
+{
+  "name": "ProjectAwakening",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": { "$path": "src/shared" },
+      "Remotes": {
+        "$className": "Folder",
+        "ChooseCharacter": { "$className": "RemoteEvent" }
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": { "$path": "src/server" }
+    },
+
+    "StarterPlayer": {
+      "$properties": {
+        "CameraMaxZoomDistance": 24,
+        "CameraMinZoomDistance": 6,
+        "EnableMouseLockOption": true,
+        "LoadCharacterAppearance": false,
+        "CharacterWalkSpeed": 18
+      },
+      "StarterPlayerScripts": {
+        "Client": { "$path": "src/client" }
+      }
+    },
+
+    "Players": {
+      "$properties": { "CharacterAutoLoads": false }
+    },
+
+    "Workspace": {
+      "$properties": { "StreamingEnabled": false }
+    },
+
+    "Lighting": {
+      "$properties": {
+        "Technology": "Future",
+        "ClockTime": 16.6,
+        "GeographicLatitude": 30,
+        "Brightness": 2.4,
+        "Ambient": [0.36, 0.32, 0.45],
+        "OutdoorAmbient": [0.62, 0.56, 0.72],
+        "EnvironmentDiffuseScale": 0.15,
+        "EnvironmentSpecularScale": 0.1,
+        "GlobalShadows": true,
+        "ShadowSoftness": 0.08,
+        "ExposureCompensation": 0.1
+      },
+      "AnimeColor": {
+        "$className": "ColorCorrectionEffect",
+        "$properties": { "Saturation": 0.22, "Contrast": 0.12, "Brightness": 0.02, "TintColor": [1, 0.97, 0.98] }
+      },
+      "Glow": {
+        "$className": "BloomEffect",
+        "$properties": { "Intensity": 0.7, "Size": 28, "Threshold": 1.4 }
+      },
+      "Haze": {
+        "$className": "Atmosphere",
+        "$properties": { "Density": 0.28, "Offset": 0.1, "Color": [0.86, 0.78, 0.95], "Decay": [0.62, 0.48, 0.78], "Glare": 0.3, "Haze": 1.2 }
+      },
+      "Sun": {
+        "$className": "SunRaysEffect",
+        "$properties": { "Intensity": 0.06, "Spread": 0.6 }
+      }
+    }
+  }
+}

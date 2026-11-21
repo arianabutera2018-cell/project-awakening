@@ -1,0 +1,8 @@
+# Arquivos gerados pelo "rojo build" (podem ser recriados a qualquer momento)
+build/
+*.rbxl.lock
+*.rbxlx.lock
+sourcemap.json
+
+# Gerado pelo "selene generate-roblox-std"
+roblox.yml
